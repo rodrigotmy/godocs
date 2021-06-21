@@ -1,0 +1,2 @@
+# godocs
+Template GoDocs
