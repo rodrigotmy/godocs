@@ -96,6 +96,13 @@
   max-width: 100%;
   height: 80px;
   background: #FFF;
+  -webkit-box-shadow: 0 4px 6px #e6e6e6;
+          box-shadow: 0 4px 6px #e6e6e6;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 .navbar__container {
@@ -275,8 +282,10 @@
   max-width: 100%;
   background-size: cover;
   background-position: center;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  margin-top: 80px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .hero__container {
@@ -293,9 +302,7 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  margin-top: 70px;
+  padding-top: 70px;
 }
 
 .hero__info {
@@ -325,7 +332,6 @@
 }
 
 .hero__title {
-  margin-top: 20px;
   margin-bottom: 10px;
   font-size: 46px;
 }
